@@ -190,6 +190,8 @@ jobs:
                 echo "depend = libsoup" >> .PKGINFO
                 echo "depend = pango" >> .PKGINFO
                 echo "depend = webkit2gtk-4.1" >> .PKGINFO
+                echo "optdepend = xdg-desktop-portal: Wayland screen recording" >> .PKGINFO
+                echo "optdepend = xdg-desktop-portal-impl: Wayland screen recording" >> .PKGINFO
                 
                 tar --zstd -cf "../lookout_${PKGVER}_${ARCH}.pkg.tar.zst" .PKGINFO *
                 cd ..
